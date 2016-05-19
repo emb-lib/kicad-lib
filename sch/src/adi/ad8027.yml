@@ -1,0 +1,34 @@
+
+Name:          AD8027
+NameOffset:    600
+Description:   High-speed OpAmp
+Ref:           D
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+Part1: 
+    Caption:  ['|>', 700, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [3, IN+, 1]
+            - [4, IN-, 3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [1, OUT, 1]
+                                                         
+    PinGroup3:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [5, V+, 1]
+            - [2, V-, 3]
+
