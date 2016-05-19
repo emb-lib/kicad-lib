@@ -1,0 +1,61 @@
+
+#-------------------------------------------------------------------------------
+Name:          LT6234IDD
+NameOffset:    600
+Description:   Low-noise low-power dual OpAmp
+Keywords:      Dual Low-noise Linear Techology
+Ref:           D
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  ['|>', 700, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [3, IN+, 1]
+            - [2, IN-, 3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [1,  OUT, 1]
+
+#-------------------------------------------------------------------------------    
+Part2: 
+    Caption: ['|>', 700, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [5, IN+, 1]
+            - [6, IN-, 3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [7,  OUT, 1]
+
+#-------------------------------------------------------------------------------
+Part3: 
+    Caption: 
+    Sections: [800]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [8, V+, 1]
+            - [4, V-, 3]
+            
+#-------------------------------------------------------------------------------

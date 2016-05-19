@@ -1,0 +1,97 @@
+
+#-------------------------------------------------------------------------------
+Name:          LT6235IGN
+NameOffset:    600
+Description:   Low-noise low-power dual OpAmp
+Keywords:      Quad Low-noise Linear Techology
+Ref:           D
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  ['|>', 700, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [3, IN+, 1]
+            - [2, IN-, 3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [1,  OUT, 1]
+
+#-------------------------------------------------------------------------------    
+Part2: 
+    Caption: ['|>', 700, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [5, IN+, 1]
+            - [6, IN-, 3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [7,  OUT, 1]
+
+#-------------------------------------------------------------------------------
+Part3: 
+    Caption: ['|>', 700, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [12, IN+, 1]
+            - [11, IN-, 3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [10,  OUT, 1]
+
+#-------------------------------------------------------------------------------
+Part4: 
+    Caption: ['|>', 700, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [14, IN+, 1]
+            - [15, IN-, 3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [16,  OUT, 1]
+
+#-------------------------------------------------------------------------------
+Part5: 
+    Caption: 
+    Sections: [800]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [4, V+, 1]
+            - [13, V-, 3]
+            
+#-------------------------------------------------------------------------------
