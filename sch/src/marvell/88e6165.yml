@@ -293,3 +293,111 @@ Part4:
             - [123, MDIO_CPU, 1]
             - [116, MDIO_PHY, 1]
             
+#-------------------------------------------------------------------------------
+#
+#   Power
+#   
+#
+Part5: 
+    Caption:  [XYZ, 1700, -200]
+    Sections: [1200,1000, 1800]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [71,  VDDO_CORE, 1]      
+            - [79,  VDDO_CORE, 1]      
+            - [91,  VDDO_CORE, 1]      
+            - [97,  VDDO_CORE, 1]      
+            - [113, VDDO_CORE, 1]      
+            - [120, VDDO_CORE, 1]      
+            - [128, VDDO_CORE, 1]      
+            - [135, VDDO_CORE, 1]      
+            - [142, VDDO_CORE, 1]      
+            - [149, VDDO_CORE, 1]      
+            - [155, VDDO_CORE, 1]      
+            - [162, VDDO_CORE, 1]      
+            - [167, VDDO_CORE, 1]      
+            - [183, VDDO_CORE, 1]      
+            - [189, VDDO_CORE, 1]      
+            - [197, VDDO_CORE, 1]      
+            - [200, VDDO_CORE, 1]       
+
+    PinGroup2:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [3,   P0_AVDD,  1]
+            - [8,   P0_AVDD,  1]
+            - [14,  P1_AVDD,  1]
+            - [19,  P1_AVDD,  1]
+            - [25,  P2_AVDD,  1]
+            - [30,  P2_AVDD,  1]
+            - [36,  P3_AVDD,  1]
+            - [41,  P3_AVDD,  1]
+            - [47,  P4_AVDD,  1]
+            - [52,  P4_AVDD,  1]
+            - [100, P4_AVDDS, 1]
+            - [106, P5_AVDD,  1]
+            - [163, VPP,      1]
+            - [165, AVDD_PLL, 1]
+            - [202, AVDD,     1]
+            - [210, AVDD,     1]
+
+    PinGroup3:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [69,  P4_VDDO,      1]   
+            - [78,  P4_VDDO,      1]   
+            - [88,  P4_VDDO,      1]   
+            - [63,  P4_VDDO_SEL,  1]   
+            - [111, P4_VDDOS,     1]   
+            - [109, P4_VDDOS_SEL, 1]    
+        
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [118, P5_VDDO,     1]     
+            - [132, P5_VDDO,     1]     
+            - [141, P5_VDDO,     1]     
+            - [151, P5_VDDO,     1]     
+            - [125, P5_VDDO_SEL, 1]    
+
+    PinGroup5:
+        Side: Right
+        Sep:  Yes
+        Pins:    
+            - [175,  VDDO_LED,     1]
+            - [185,  VDDO_LED,     1]
+            - [193,  VDDO_LED,     1]
+            - [171,  LED_VDDO_SEL, 1]
+
+    PinGroup5:
+        Side: Right
+        Sep:  Yes
+        Pins:    
+            - [56,   EE_VDDO,     1]
+            - [60,   EE_VDDO_SEL, 1]
+
+    PinGroup6:
+        Side: Right
+        Sep:  Yes
+        Pins:    
+            - [115,  VDDO_SMI_PHY,     1]
+            - [117,  SMI_PHY_VDDO_SEL, 1]
+
+    PinGroup7:
+        Side: Right
+        Sep:  No
+        Pins:    
+            - [11,   VSS,  1]
+            - [22,   VSS,  1]
+            - [33,   VSS,  1]
+            - [44,   VSS,  1]
+            - [103,  VSS,  1]
+            - [205,  VSSC, 1]
+            - [206,  VSSC, 1]
+            - [EPAD, VSS,  1]            
