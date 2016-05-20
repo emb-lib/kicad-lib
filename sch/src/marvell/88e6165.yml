@@ -265,12 +265,13 @@ Part4:
         Sep:  No
         Pins:
             - [121, RESETn, 2]
-            - [211, RSET,   1]
+            - [211, RSET,   2]
     
     PinGroup3:
         Side: Right
         Sep:  Yes
         Pins:
+            - [55,  EE_DOUT,            1]         
             - [57,  EE_DIN/HD_FLOW_DIS, 1]
             - [58,  E_CLK/FD_FLOW_DIS,  1]
             - [59,  E_CS/EE_4WIRE,      1]
