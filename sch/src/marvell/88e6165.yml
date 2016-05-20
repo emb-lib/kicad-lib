@@ -194,3 +194,52 @@ Part2:
             - [129, P5_OUTD6/ADDR3,      1]
             - [127, P5_OUTD7/ADDR4,      1]
 
+#-------------------------------------------------------------------------------
+#
+#   LED signals
+#   
+#
+Part3: 
+    Caption:  [XYZ, 1500, -200]
+    Sections: [1000, 1000, 1000]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [172, P0_LED0, 1]
+            - [173, P0_LED1, 1]
+            - [174, P0_LED2, 1]
+
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [177, P1_LED0, 1]
+            - [178, P1_LED1, 1]
+            - [179, P1_LED2, 1]
+
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [181, P2_LED0, 1]
+            - [182, P2_LED1, 1]
+            - [184, P2_LED2, 1]
+
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [187, P3_LED0, 1]
+            - [188, P3_LED1, 1]
+            - [190, P3_LED2, 1]
+
+    PinGroup5:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [110, P4_LED,  1]
+            - [192, P4_LED0, 1]
+            - [194, P4_LED1, 1]
+            - [195, P4_LED2, 1]
