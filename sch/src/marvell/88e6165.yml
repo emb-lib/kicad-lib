@@ -352,11 +352,16 @@ Part5:
             - [69,  P4_VDDO,      1]   
             - [78,  P4_VDDO,      1]   
             - [88,  P4_VDDO,      1]   
-            - [63,  P4_VDDO_SEL,  1]   
+            - [63,  P4_VDDO_SEL,  1]
+            
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:   
             - [111, P4_VDDOS,     1]   
             - [109, P4_VDDOS_SEL, 1]    
         
-    PinGroup4:
+    PinGroup5:
         Side: Right
         Sep:  Yes
         Pins:
@@ -366,7 +371,7 @@ Part5:
             - [151, P5_VDDO,     1]     
             - [125, P5_VDDO_SEL, 1]    
 
-    PinGroup5:
+    PinGroup6:
         Side: Right
         Sep:  Yes
         Pins:    
@@ -375,21 +380,21 @@ Part5:
             - [193,  VDDO_LED,     1]
             - [171,  LED_VDDO_SEL, 1]
 
-    PinGroup5:
+    PinGroup7:
         Side: Right
         Sep:  Yes
         Pins:    
             - [56,   EE_VDDO,     1]
             - [60,   EE_VDDO_SEL, 1]
 
-    PinGroup6:
+    PinGroup8:
         Side: Right
         Sep:  Yes
         Pins:    
             - [115,  VDDO_SMI_PHY,     1]
             - [117,  SMI_PHY_VDDO_SEL, 1]
 
-    PinGroup7:
+    PinGroup9:
         Side: Right
         Sep:  No
         Pins:    
