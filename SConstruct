@@ -70,6 +70,12 @@ ICGEN    = os.path.join(ToolDir, 'icgen.py')
 #
 SEP_LEN = 76
 
+#-------------------------------------------------------------------------------
+def namegen(fullpath, ext):
+    basename = os.path.basename(fullpath)
+    name     = os.path.splitext(basename)[0]
+    return name + os.path.extsep + ext
+#-------------------------------------------------------------------------------
 def pexec(cmd):
     p = subprocess.Popen( cmd.split(), universal_newlines = True,
                          stdin  = subprocess.PIPE,
@@ -80,7 +86,6 @@ def pexec(cmd):
     out, err = p.communicate()
 
     return p.returncode, out, err
-
 #-------------------------------------------------------------------------------
 #
 #    Build .cmp and .dcmp files from yml source file
@@ -129,6 +134,11 @@ def build_lib(target, source, env):
     for i in xrange(len(source)):
         src_list.append( str(source[i]) )
 
+    doc_list = []
+    for i in xrange(len(source)):
+        doc_file = namegen( str(source[i]), CmpDocExt)
+        doc_list.append( os.path.join( os.path.dirname(str(source[i])), doc_file) ) 
+        
     #-------------------------------------------------------------
     #
     #    Create library file
@@ -147,6 +157,26 @@ def build_lib(target, source, env):
     
     with open( str(target[0]), 'wb') as f:
         f.write(lib)
+
+    #-------------------------------------------------------------
+    #
+    #    Create doc-lib file
+    #
+    libdoc   = 'EESchema-DOCLIB  Version 2.0' + os.linesep
+    tail  = '#' + os.linesep
+    tail += '#End Doc Library' + os.linesep
+    
+    for i in doc_list:
+        f = open(i, 'rb')
+        libdoc += f.read()
+        f.close()
+        
+    libdoc += tail
+    
+    libdoc_name = namegen( str(target[0]), LibDocExt)
+    
+    with open( os.path.join( os.path.dirname(str(target[0])), libdoc_name), 'wb') as f:
+        f.write(libdoc)
 
     print '*'*SEP_LEN
 
