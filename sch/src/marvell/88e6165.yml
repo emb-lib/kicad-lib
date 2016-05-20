@@ -262,12 +262,19 @@ Part4:
 
     PinGroup2:
         Side: Left
-        Sep:  No
+        Sep:  Yes
         Pins:
-            - [121, RESETn, 2]
-            - [211, RSET,   2]
+            - [121, RESETn, 1]
+            - [211, RSET,   1]
     
     PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [61, SW_MODE0, 1]
+            - [62, SW_MODE1, 1]
+    
+    PinGroup4:
         Side: Right
         Sep:  Yes
         Pins:
@@ -276,7 +283,7 @@ Part4:
             - [58,  E_CLK/FD_FLOW_DIS,  1]
             - [59,  E_CS/EE_4WIRE,      1]
     
-    PinGroup4:
+    PinGroup5:
         Side: Right
         Sep:  No
         Pins:
@@ -285,3 +292,4 @@ Part4:
             - [114, MDC_PHY,  1]
             - [123, MDIO_CPU, 1]
             - [116, MDIO_PHY, 1]
+            
