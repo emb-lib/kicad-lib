@@ -3,6 +3,7 @@ Name:          AD8027
 NameOffset:    600
 Description:   High-speed OpAmp
 Ref:           D
+Footprint:     SOT-23-5
 PinLen:        200  # mils
 PinNameOffset: 50
 Spacing:       200  # mils
