@@ -61,9 +61,10 @@
 #
 Name:          LTC2256IUJ-14         # название компонента
 NameOffset:    600                   # смещение названия по горизонтали (mils); опционально, значение по умолчанию: 1000
-Description:   Cmp description       # описание; опционально; пример: High-speed low-power 14-bit ADC
+Description:   Cmp description       # описание; опционально; пример: 14-Bit, 25Msps Ultralow Power 1.8V ADC
 Keywords:      Keywords list         # ключевые слова; опционально
 Ref:           D                     # база позиционного обозначения
+Footprint:     QFN-40                # посадочное место по умолчанию; опционально
 PinLen:        400                   # длина вывода (mils)
 PinNameOffset: 50                    # смещение имени пина (mils)
 Spacing:       200                   # шаг разметки по вертикали (mils)
@@ -190,9 +191,10 @@ PartN:
 ##### Описание
 ```YAML
 Name:          LTC2256IUJ-14
-Description:   High-speed low-power 14-bit ADC
-Keywords:      High-speed Linear Techology
+Description:   14-Bit, 25Msps Ultralow Power 1.8V ADC
+Keywords:      Ultralow Power ADC Linear Techology
 Ref:           D
+Footprint:     QFN-40
 PinLen:        400  # mils
 PinNameOffset: 50
 Spacing:       200  # mils
