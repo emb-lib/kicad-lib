@@ -1,0 +1,58 @@
+
+Name:          LTC2654BIGN-H16#PBF
+Description:   16-Bit,4-Channel Voltage-Output DAC
+Keywords:      DAC 4-Channel Linear Techology
+Ref:           D
+Footprint:     TSSOP-16
+PinLen:        400  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+Part1: 
+    Caption:  [DAC, 1500, -300]
+    Sections: [1050, 900, 1050]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [7,  ~CD~/LD, 1]
+            - [8,  SCK,     1]
+            - [9,  SDI,     1]
+            - [10, SDO,     1]
+                                                         
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [11, ~CLR,   1]
+            - [12, PORSEL, 1]
+            - [6,  ~LDAC,  1]
+
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [8,  REFIN/OUT, 1]
+            - [3,  REFCOMP,   1]
+            - [1,  REFLO,     1]
+
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [2,  VOUTA,  1]
+            - [4,  VOUTA,  2]
+            - [13, VOUTA,  2]
+            - [14, VOUTA,  2]
+
+    PinGroup5:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [15, VCC, 1]
+            - [16, GND, 3]
+
+
+
