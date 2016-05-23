@@ -28,7 +28,7 @@ import re
 #
 #     Project settings
 #
-ToolDir      = os.environ['CAD'] + '/kicad/tools'
+ToolDir      = os.environ['KICAD_TOOLS']
 SchSrcDir    = 'sch/src'
                 
 #-------------------------------------------------------------------------------
