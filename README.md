@@ -183,10 +183,174 @@ PartN:
 
 Разумеется, в первом случае генерируются только изменённые компоненты и пересобирается соответствующая библиотека.
 
+### Примеры
+
+#### LTC2256, 14-разрядный высокоскоростной малопотребляющий АЦП
+
+##### Описание
+```YAML
+Name:          LTC2256IUJ-14
+Description:   High-speed low-power 14-bit ADC
+Keywords:      High-speed Linear Techology
+Ref:           D
+PinLen:        400  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+Part1: 
+    Caption:  [ADC, 1500, -300]
+    Sections: [1000, 1000, 1000]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [1, AIN+, 1]
+            - [2, AIN-, 3]
+                                                         
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [9,  VDD, 1]
+            - [10, VDD, 1]
+            - [40, VDD, 1]
+            - [3,  VDD, 3]
+
+    PinGroup3:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [26, OVDD, 1]
+            - [25, OGND, 3]
+
+    PinGroup4:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [37, VCM,  1]
+            - [4,  REFH, 2]
+            - [5,  REFH, 1]
+            - [6,  REFL, 3]
+            - [7,  REFL, 1]
+
+    PinGroup5:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [39, SENSE, 1]
+            - [38, VREF,  1]
 
 
+    PinGroup6:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [18, D0_1,   1]
+            - [20, D2_3,   1]
+            - [22, D4_5,   1]
+            - [24, D6_7,   1]
+            - [30, D8_9,   1]
+            - [32, D10_11, 1]
+            - [34, D12_13, 1]
+            - [36, OF,     2]
 
+    PinGroup7:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [8,  PAR/~SER, 1]
+            - [13, ~CS,      1]
+            - [14, SCK,      1]
+            - [15, SDI,      1]
+            - [16, SDO,      1]
 
+    PinGroup8:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [11, ENC+,    1]
+            - [12, ENC-,    1]
+            - [28, CLKOUT+, 1]
+            - [27, CLKOUT-, 1]
+
+```
+
+##### Результат
+![ltc2256](https://cloud.githubusercontent.com/assets/14235855/15468736/adc111d8-2107-11e6-88c5-8113eb2e7557.png)
+
+#### Сдвоеный операционный усилитель
+
+Компонент разбит на три части: две - "половинки" усилителя, третья - питание.
+
+```YAML
+
+#-------------------------------------------------------------------------------
+Name:          LT6234IDD
+NameOffset:    600
+Description:   Low-noise low-power dual OpAmp
+Keywords:      Dual Low-noise Linear Techology
+Ref:           D
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  ['|>', 700, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [3, IN+, 1]
+            - [2, IN-, 3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [1,  OUT, 1]
+
+#-------------------------------------------------------------------------------    
+Part2: 
+    Caption: ['|>', 700, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [5, IN+, 1]
+            - [6, IN-, 3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [7,  OUT, 1]
+
+#-------------------------------------------------------------------------------
+Part3: 
+    Caption: 
+    Sections: [800]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [8, V+, 1]
+            - [4, V-, 3]
+            
+#-------------------------------------------------------------------------------
+```
+
+##### Результат
+
+![lt6234](https://cloud.githubusercontent.com/assets/14235855/15468744/b612f3ba-2107-11e6-8b7d-e314618acead.png)
 
 
 
