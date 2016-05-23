@@ -1,0 +1,408 @@
+#-------------------------------------------------------------------------------
+#
+#   Name:         88E6165
+#   Description:  1G Ethernet switch
+#   Manufacturer: Marvell
+#
+
+#-------------------------------------------------------------------------------
+#
+#   Common component parameters
+#
+Name:          88E6165               # name string
+NameOffset:    600                   # mils; optional, default value: 1000
+Description:   1G Ethernet switch    # optional
+Keywords:      Switch                # optional
+Ref:           D                     # reference designator base
+PinLen:        400                   # mils
+PinNameOffset: 50                    # mils
+Spacing:       200                   # mils; vertical step for pin drawing
+Filled:        Yes                   # fill outline with color, values: Yes | No
+
+#-------------------------------------------------------------------------------
+#
+#   P0-P4 MDI and P4 & P5 SERDES signals
+#   
+Part1: 
+    Caption:  [SW, 1500, -200]
+    Sections: [1000, 1000, 1000]
+                                
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [9,  P0_MDIN0, 1]
+            - [6,  P0_MDIN1, 1]
+            - [4,  P0_MDIN2, 1]
+            - [1,  P0_MDIN3, 1]
+            - [10, P0_MDIP0, 1]
+            - [7,  P0_MDIP1, 1]
+            - [5,  P0_MDIP2, 1]
+            - [2,  P0_MDIP3, 1]
+
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [20, P1_MDIN0, 1]   
+            - [17, P1_MDIN1, 1]   
+            - [15, P1_MDIN2, 1]   
+            - [12, P1_MDIN3, 1]   
+            - [21, P1_MDIP0, 1]   
+            - [18, P1_MDIP1, 1]   
+            - [16, P1_MDIP2, 1]  
+            - [13, P1_MDIP3, 1]   
+
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [31, P2_MDIN0, 1] 
+            - [28, P2_MDIN1, 1] 
+            - [26, P2_MDIN2, 1] 
+            - [23, P2_MDIN3, 1] 
+            - [32, P2_MDIP0, 1] 
+            - [29, P2_MDIP1, 1] 
+            - [27, P2_MDIP2, 1] 
+            - [24, P2_MDIP3, 1] 
+
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [42, P3_MDIN0, 1] 
+            - [39, P3_MDIN1, 1] 
+            - [37, P3_MDIN2, 1] 
+            - [34, P3_MDIN3, 1] 
+            - [43, P3_MDIP0, 1] 
+            - [40, P3_MDIP1, 1] 
+            - [38, P3_MDIP2, 1] 
+            - [35, P3_MDIP3, 1] 
+            
+    PinGroup5:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [53, P4_MDIN0, 1] 
+            - [50, P4_MDIN1, 1] 
+            - [48, P4_MDIN2, 1] 
+            - [45, P4_MDIN3, 1] 
+            - [54, P4_MDIP0, 1] 
+            - [51, P4_MDIP1, 1] 
+            - [49, P4_MDIP2, 1] 
+            - [46, P4_MDIP3, 1] 
+
+    PinGroup6:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [98 , P4_TXP, 1]
+            - [99 , P4_TXN, 1]
+            - [101, P4_RXP, 1]
+            - [102, P4_RXN, 1]
+            - [104, P5_TXP, 1]
+            - [105, P5_TXN, 1]
+            - [107, P5_RXP, 1]
+            - [108, P5_RXN, 1]
+                                    
+#-------------------------------------------------------------------------------
+#
+#   P4 & P5 xMII signals
+#   
+#
+Part2: 
+    Caption:  [SW, 2700, -200]
+    Sections: [2200, 1000, 2200]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [64,  P4_GMII_EN,       1]
+            - [126, P5_GMII_EN,       1]
+            - [119, CLK125,           1]
+            - [76,  P4_GTXCLK/JUMBO,  1]
+            - [139, P5_GTXCLK/AM_DIS, 1] 
+
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [80, P4_INCLK, 1]
+            - [81, P4_INDV,  1]
+            - [83, P4_IND0,  1]
+            - [84, P4_IND1,  1]
+            - [85, P4_IND2,  1]
+            - [86, P4_IND3,  1]
+            - [87, P4_IND4,  1]
+            - [89, P4_IND5,  1]
+            - [90, P4_IND6,  1]
+            - [92, P4_IND7,  1]
+
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [77, P4_OUTCLK,           1]
+            - [75, P4_OUTEN/P4_HALFDPX, 1]
+            - [74, P4_OUTD0/P4_MODE0,   1]
+            - [73, P4_OUTD1/P4_MODE1,   1]
+            - [72, P4_OUTD2/P4_MODE2,   1]
+            - [70, P4_OUTD3,            1]
+            - [68, P4_OUTD4,            1]
+            - [67, P4_OUTD5/LED_MODE,   1]
+            - [66, P4_OUTD6/RMU_MODE0,  1]
+            - [65, P4_OUTD7/RMU_MODE1,  1]
+
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [96,  P4_COL,         1]
+            - [95,  P4_CRS,         1]
+            - [112, P4_SDET,        1]
+            - [157, P5_CRS/P5_LED,  1]
+            - [158, P5_COL/P5_SDET, 1]
+
+    PinGroup5:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [143, P5_INCLK, 1]
+            - [144, P5_INDV,  1]
+            - [145, P5_IND0,  1]
+            - [146, P5_IND1,  1]
+            - [147, P5_IND2,  1]
+            - [148, P5_IND3,  1]
+            - [150, P5_IND4,  1]
+            - [152, P5_IND5,  1]
+            - [153, P5_IND6,  1]
+            - [154, P5_IND7,  1]
+            
+    PinGroup6:
+        Side: Right
+        Sep:  No
+        Pins:            
+            - [140, P5_OUTCLK,           1]
+            - [138, P5_OUTEN/P5_HALFDPX, 1]
+            - [137, P5_OUTD0/P5_MODE0,   1]
+            - [136, P5_OUTD1/P5_MODE1,   1]
+            - [134, P5_OUTD2/P5_MODE2,   1]
+            - [133, P5_OUTD3/ADDR0,      1]
+            - [131, P5_OUTD4/ADDR1,      1]
+            - [130, P5_OUTD5/ADDR2,      1]
+            - [129, P5_OUTD6/ADDR3,      1]
+            - [127, P5_OUTD7/ADDR4,      1]
+
+#-------------------------------------------------------------------------------
+#
+#   LED signals
+#   
+#
+Part3: 
+    Caption:  [SW, 1500, -200]
+    Sections: [1000, 1000, 1000]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [172, P0_LED0, 1]
+            - [173, P0_LED1, 1]
+            - [174, P0_LED2, 1]
+
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [177, P1_LED0, 1]
+            - [178, P1_LED1, 1]
+            - [179, P1_LED2, 1]
+
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [181, P2_LED0, 1]
+            - [182, P2_LED1, 1]
+            - [184, P2_LED2, 1]
+
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [187, P3_LED0, 1]
+            - [188, P3_LED1, 1]
+            - [190, P3_LED2, 1]
+
+    PinGroup5:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [110, P4_LED,  1]
+            - [192, P4_LED0, 1]
+            - [194, P4_LED1, 1]
+            - [195, P4_LED2, 1]
+            
+#-------------------------------------------------------------------------------
+#
+#   MDIO, EEPROM and misc signals
+#   
+#
+Part4: 
+    Caption:  [SW, 1500, -200]
+    Sections: [1000,1000, 2000]
+    
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [204, XTAL_IN,  1]
+            - [203, XTAL_OUT, 3]
+
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [121, RESETn, 1]
+            - [211, RSET,   1]
+    
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [61, SW_MODE0, 1]
+            - [62, SW_MODE1, 1]
+    
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [55,  EE_DOUT,            1]         
+            - [57,  EE_DIN/HD_FLOW_DIS, 1]
+            - [58,  E_CLK/FD_FLOW_DIS,  1]
+            - [59,  E_CS/EE_4WIRE,      1]
+    
+    PinGroup5:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [122, INTn,     1]
+            - [124, MDC_CPU,  1]
+            - [114, MDC_PHY,  1]
+            - [123, MDIO_CPU, 1]
+            - [116, MDIO_PHY, 1]
+            
+#-------------------------------------------------------------------------------
+#
+#   Power
+#   
+#
+Part5: 
+    Caption:  [SW, 1700, -200]
+    Sections: [1200,1000, 1800]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [71,  VDDO_CORE, 1]      
+            - [79,  VDDO_CORE, 1]      
+            - [91,  VDDO_CORE, 1]      
+            - [97,  VDDO_CORE, 1]      
+            - [113, VDDO_CORE, 1]      
+            - [120, VDDO_CORE, 1]      
+            - [128, VDDO_CORE, 1]      
+            - [135, VDDO_CORE, 1]      
+            - [142, VDDO_CORE, 1]      
+            - [149, VDDO_CORE, 1]      
+            - [155, VDDO_CORE, 1]      
+            - [162, VDDO_CORE, 1]      
+            - [167, VDDO_CORE, 1]      
+            - [183, VDDO_CORE, 1]      
+            - [189, VDDO_CORE, 1]      
+            - [197, VDDO_CORE, 1]      
+            - [200, VDDO_CORE, 1]       
+
+    PinGroup2:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [3,   P0_AVDD,  1]
+            - [8,   P0_AVDD,  1]
+            - [14,  P1_AVDD,  1]
+            - [19,  P1_AVDD,  1]
+            - [25,  P2_AVDD,  1]
+            - [30,  P2_AVDD,  1]
+            - [36,  P3_AVDD,  1]
+            - [41,  P3_AVDD,  1]
+            - [47,  P4_AVDD,  1]
+            - [52,  P4_AVDD,  1]
+            - [100, P4_AVDDS, 1]
+            - [106, P5_AVDD,  1]
+            - [163, VPP,      1]
+            - [165, AVDD_PLL, 1]
+            - [202, AVDD,     1]
+            - [210, AVDD,     1]
+
+    PinGroup3:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [69,  P4_VDDO,      1]   
+            - [78,  P4_VDDO,      1]   
+            - [88,  P4_VDDO,      1]   
+            - [63,  P4_VDDO_SEL,  1]
+            
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:   
+            - [111, P4_VDDOS,     1]   
+            - [109, P4_VDDOS_SEL, 1]    
+        
+    PinGroup5:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [118, P5_VDDO,     1]     
+            - [132, P5_VDDO,     1]     
+            - [141, P5_VDDO,     1]     
+            - [151, P5_VDDO,     1]     
+            - [125, P5_VDDO_SEL, 1]    
+
+    PinGroup6:
+        Side: Right
+        Sep:  Yes
+        Pins:    
+            - [175,  VDDO_LED,     1]
+            - [185,  VDDO_LED,     1]
+            - [193,  VDDO_LED,     1]
+            - [171,  LED_VDDO_SEL, 1]
+
+    PinGroup7:
+        Side: Right
+        Sep:  Yes
+        Pins:    
+            - [56,   EE_VDDO,     1]
+            - [60,   EE_VDDO_SEL, 1]
+
+    PinGroup8:
+        Side: Right
+        Sep:  Yes
+        Pins:    
+            - [115,  VDDO_SMI_PHY,     1]
+            - [117,  SMI_PHY_VDDO_SEL, 1]
+
+    PinGroup9:
+        Side: Right
+        Sep:  No
+        Pins:    
+            - [11,   VSS,  1]
+            - [22,   VSS,  1]
+            - [33,   VSS,  1]
+            - [44,   VSS,  1]
+            - [103,  VSS,  1]
+            - [205,  VSSC, 1]
+            - [206,  VSSC, 1]
+            - [EPAD, VSS,  1]            

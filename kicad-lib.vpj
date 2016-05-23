@@ -60,12 +60,14 @@
             <Folder Name="src">
                 <Folder Name="adi">
                     <F N="sch/src/adi/ad8027.yml"/>
-                    <F N="sch/src/adi/ad8515.yml"/>
                 </Folder>
                 <Folder Name="lt">
                     <F N="sch/src/lt/lt6234.yml"/>
                     <F N="sch/src/lt/lt6235.yml"/>
                     <F N="sch/src/lt/ltc2256.yml"/>
+                </Folder>
+                <Folder Name="marvell">
+                    <F N="sch/src/marvell/88e6165.yml"/>
                 </Folder>
                 <Folder Name="ti">
                     <F N="sch/src/ti/op836.yml"/>
