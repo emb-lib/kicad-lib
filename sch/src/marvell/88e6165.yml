@@ -24,7 +24,7 @@ Filled:        Yes                   # fill outline with color, values: Yes | No
 #   P0-P4 MDI and P4 & P5 SERDES signals
 #   
 Part1: 
-    Caption:  [XYZ, 1500, -200]
+    Caption:  [SW, 1500, -200]
     Sections: [1000, 1000, 1000]
                                 
     PinGroup1:
@@ -111,7 +111,7 @@ Part1:
 #   
 #
 Part2: 
-    Caption:  [XYZ, 2700, -200]
+    Caption:  [SW, 2700, -200]
     Sections: [2200, 1000, 2200]
 
     PinGroup1:
@@ -200,7 +200,7 @@ Part2:
 #   
 #
 Part3: 
-    Caption:  [XYZ, 1500, -200]
+    Caption:  [SW, 1500, -200]
     Sections: [1000, 1000, 1000]
 
     PinGroup1:
@@ -250,7 +250,7 @@ Part3:
 #   
 #
 Part4: 
-    Caption:  [XYZ, 1500, -200]
+    Caption:  [SW, 1500, -200]
     Sections: [1000,1000, 2000]
     
     PinGroup1:
@@ -299,7 +299,7 @@ Part4:
 #   
 #
 Part5: 
-    Caption:  [XYZ, 1700, -200]
+    Caption:  [SW, 1700, -200]
     Sections: [1200,1000, 1800]
 
     PinGroup1:
