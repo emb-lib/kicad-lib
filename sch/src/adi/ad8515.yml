@@ -3,6 +3,7 @@ Name:          AD8515
 NameOffset:    600
 Description:   General Purpose Low-cost OpAmp
 Ref:           D
+Footprint:     SOT-23-5
 PinLen:        200  # mils
 PinNameOffset: 50
 Spacing:       200  # mils
