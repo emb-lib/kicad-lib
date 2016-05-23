@@ -62,6 +62,7 @@
                     <F N="sch/src/adi/ad8027.yml"/>
                     <F N="sch/src/adi/ad8515.yml"/>
                     <F N="sch/src/adi/ad8603.yml"/>
+                    <F N="sch/src/adi/ada4940-1.yml"/>
                 </Folder>
                 <Folder Name="lt">
                     <F N="sch/src/lt/lt1761es5-byp.yml"/>
