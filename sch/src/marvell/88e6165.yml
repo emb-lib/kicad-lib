@@ -228,10 +228,11 @@ Part3:
             - [184, P2_LED2, 1]
 
     PinGroup4:
+        Height: 6
         Side: Right
         Sep:  Yes
         Pins:
-            - [187, P3_LED0, 1]
+            - [187, P3_LED0, 2]
             - [188, P3_LED1, 1]
             - [190, P3_LED2, 1]
 
@@ -239,10 +240,10 @@ Part3:
         Side: Right
         Sep:  No
         Pins:
-            - [110, P4_LED,  1]
             - [192, P4_LED0, 1]
             - [194, P4_LED1, 1]
             - [195, P4_LED2, 1]
+            - [110, P4_LED,  2]
             
 #-------------------------------------------------------------------------------
 #
@@ -340,9 +341,9 @@ Part5:
             - [52,  P4_AVDD,  1]
             - [100, P4_AVDDS, 1]
             - [106, P5_AVDD,  1]
-            - [163, VPP,      1]
-            - [165, AVDD_PLL, 1]
-            - [202, AVDD,     1]
+            - [165, AVDD_PLL, 2]
+            - [163, VPP,      2]
+            - [202, AVDD,     2]
             - [210, AVDD,     1]
 
     PinGroup3:
@@ -398,11 +399,11 @@ Part5:
         Side: Right
         Sep:  No
         Pins:    
-            - [11,   VSS,  1]
+            - [11,   VSS,  2]
             - [22,   VSS,  1]
             - [33,   VSS,  1]
             - [44,   VSS,  1]
             - [103,  VSS,  1]
-            - [205,  VSSC, 1]
-            - [206,  VSSC, 1]
             - [EPAD, VSS,  1]            
+            - [205,  VSSC, 3]
+            - [206,  VSSC, 1]
