@@ -1,0 +1,53 @@
+
+#-------------------------------------------------------------------------------
+Name:          SN74LVC125APW
+NameOffset:    600
+Description:   Quad Bus Buffer Gate With 3-State Outputs
+Keywords:      Buffer Quad 3-State Texas Instruments
+Ref:           D
+Footprint:     TSSOP-14
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [2,  1A, 1]
+            - [5,  2A, 1]
+            - [9,  3A, 1]
+            - [12, 4A, 1]
+                                                         
+    PinGroup2:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [1,  ~1OE, 1]
+            - [4,  ~2OE, 1]
+            - [10, ~3OE, 1]
+            - [13, ~4OE, 1]
+
+    PinGroup3:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [3,  1Y, 1]
+            - [6,  2Y, 1]
+            - [8,  3Y, 1]
+            - [11, 4Y, 1]
+                                                         
+    PinGroup4:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [14, VCC, 1]
+            - [7,  GND, 3]
+#-------------------------------------------------------------------------------
+

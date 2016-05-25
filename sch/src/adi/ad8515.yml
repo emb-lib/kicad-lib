@@ -2,6 +2,7 @@
 Name:          AD8515
 NameOffset:    600
 Description:   General Purpose Low-cost OpAmp
+Keywords:      Low-cost OpAmp Analog Devices Inc.
 Ref:           D
 Footprint:     SOT-23-5
 PinLen:        200  # mils
@@ -28,7 +29,7 @@ Part1:
                                                          
     PinGroup3:
         Side: Right
-        Sep:  Yes
+        Sep:  No
         Pins:
             - [5, V+, 1]
             - [2, V-, 3]

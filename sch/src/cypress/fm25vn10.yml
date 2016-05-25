@@ -1,0 +1,36 @@
+
+#-------------------------------------------------------------------------------
+Name:          FM25VN10-G
+NameOffset:    600
+Description:   1-Mbit (128K x 8) Serial (SPI) F-RAM
+Keywords:      F-RAM 1-Mbit Cypress Semiconductor
+Ref:           D
+Footprint:     SO-8
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  [FRAM, 900, -250]
+    Sections: [600, 600, 600]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [1, ~CS,  1]
+            - [5, MOSI, 1]
+            - [2, MISO, 1]
+            - [6, SCK,  1]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [3,  ~WP,   1]
+            - [7,  ~HOLD, 1]
+            - [8,  VDD,   1]
+            - [4,  GND,   1]
+#-------------------------------------------------------------------------------    

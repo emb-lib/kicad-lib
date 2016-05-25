@@ -61,17 +61,32 @@
                 <Folder Name="adi">
                     <F N="sch/src/adi/ad8027.yml"/>
                     <F N="sch/src/adi/ad8515.yml"/>
+                    <F N="sch/src/adi/ad8603.yml"/>
+                    <F N="sch/src/adi/ada4940-1.yml"/>
+                </Folder>
+                <Folder Name="cypress">
+                    <F N="sch/src/cypress/fm25vn10.yml"/>
                 </Folder>
                 <Folder Name="lt">
+                    <F N="sch/src/lt/lt1761es5-byp.yml"/>
+                    <F N="sch/src/lt/lt1761es5-xx.yml"/>
                     <F N="sch/src/lt/lt6234.yml"/>
                     <F N="sch/src/lt/lt6235.yml"/>
                     <F N="sch/src/lt/ltc2256.yml"/>
+                    <F N="sch/src/lt/ltc2654.yml"/>
                 </Folder>
                 <Folder Name="marvell">
                     <F N="sch/src/marvell/88e6165.yml"/>
                 </Folder>
+                <Folder Name="maxim">
+                    <F N="sch/src/maxim/max6126.yml"/>
+                </Folder>
                 <Folder Name="ti">
                     <F N="sch/src/ti/op836.yml"/>
+                    <F N="sch/src/ti/sn74lvc125.yml"/>
+                </Folder>
+                <Folder Name="ulis">
+                    <F N="sch/src/ulis/ul_04_47_2-051.yml"/>
                 </Folder>
             </Folder>
         </Folder>

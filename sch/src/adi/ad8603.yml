@@ -1,8 +1,8 @@
 
-Name:          AD8027
+Name:          AD8603AUJ
 NameOffset:    600
-Description:   High-Speed OpAmp
-Keywords:      High-Speed OpAmp Analog Devices Inc.
+Description:   General Purpose Micropower Rail-To-Rail OpAmp
+Keywords:      Micropower Rail-To-Rail OpAmp Analog Devices Inc.
 Ref:           D
 Footprint:     SOT-23-5
 PinLen:        200  # mils
