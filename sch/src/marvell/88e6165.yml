@@ -11,8 +11,8 @@
 #
 Name:          88E6165               # name string
 NameOffset:    600                   # mils; optional, default value: 1000
-Description:   1G Ethernet switch    # optional
-Keywords:      Switch                # optional
+Description:   5-Port, 1Gb Ethernet switch
+Keywords:      switch marvell ethernet
 Ref:           D                     # reference designator base
 PinLen:        400                   # mils
 PinNameOffset: 50                    # mils
