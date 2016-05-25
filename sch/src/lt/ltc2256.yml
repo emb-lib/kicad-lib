@@ -1,8 +1,9 @@
 
 Name:          LTC2256IUJ-14
-Description:   High-speed low-power 14-bit ADC
-Keywords:      High-speed Linear Techology
+Description:   14-Bit, 25Msps Ultralow Power 1.8V ADC
+Keywords:      Ultralow Power ADC Linear Techology
 Ref:           D
+Footprint:     QFN-40
 PinLen:        400  # mils
 PinNameOffset: 50
 Spacing:       200  # mils
