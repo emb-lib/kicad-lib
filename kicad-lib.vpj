@@ -80,6 +80,7 @@
                 </Folder>
                 <Folder Name="ti">
                     <F N="sch/src/ti/op836.yml"/>
+                    <F N="sch/src/ti/sn74lvc125.yml"/>
                 </Folder>
             </Folder>
         </Folder>
