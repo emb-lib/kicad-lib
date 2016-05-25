@@ -1,0 +1,69 @@
+
+#-------------------------------------------------------------------------------
+Name:          UL_04_47_2-051
+NameOffset:    600
+Description:   17-um pitch 640x480 Microbolometer Detector
+Keywords:      Microbolometer Ulis
+Ref:           A
+Footprint:     UL04472
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  
+    Sections: [750, 600, 750]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [2, VDDA,  1]
+            - [1, VSSA , 3]
+                                                         
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [18, VDDL,  1]
+            - [17, VSSL , 3]
+            
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [16, MC,     1]
+            - [13, RESET,  1]
+            - [14, INT,    1]
+            - [12, SERDAT, 1]
+            
+    PinGroup4:
+        Side:   Right
+        Sep:    Yes
+        Height: 3
+        Pins:
+            - [4,  VIDEO, 1]
+
+    PinGroup5:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [7,  GFID, 1]
+            - [10, VDET, 2]
+
+    PinGroup6:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [8,  GSK,  1]
+            - [6,  VBUS, 2]
+            - [9,  VREF, 2]
+
+    PinGroup7:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [5,  VTEMP1, 1]
+#-------------------------------------------------------------------------------    

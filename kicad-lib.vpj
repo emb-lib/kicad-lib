@@ -85,6 +85,9 @@
                     <F N="sch/src/ti/op836.yml"/>
                     <F N="sch/src/ti/sn74lvc125.yml"/>
                 </Folder>
+                <Folder Name="ulis">
+                    <F N="sch/src/ulis/ul_04_47_2-051.yml"/>
+                </Folder>
             </Folder>
         </Folder>
         <F N="SConstruct"/>
