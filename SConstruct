@@ -97,7 +97,7 @@ def create_cmp(target, source, env):
     #
     if env['FIRST_ENTRY'] == False:
         env['FIRST_ENTRY'] = True
-        print '*'*SEP_LEN
+        print '*'*int(SEP_LEN/2)
 
     #------------------------------------------------
     #
@@ -117,7 +117,7 @@ def create_cmp(target, source, env):
     out += err
     if out:        print out.replace('`', '\'')
     if rcode != 0: return rcode
-
+    
 #-------------------------------------------------------------------------------
 #
 #    Build executable file from object files
@@ -133,11 +133,6 @@ def build_lib(target, source, env):
     src_list = []
     for i in xrange(len(source)):
         src_list.append( str(source[i]) )
-
-    doc_list = []
-    for i in xrange(len(source)):
-        doc_file = namegen( str(source[i]), CmpDocExt)
-        doc_list.append( os.path.join( os.path.dirname(str(source[i])), doc_file) ) 
         
     #-------------------------------------------------------------
     #
@@ -158,29 +153,34 @@ def build_lib(target, source, env):
     with open( str(target[0]), 'wb') as f:
         f.write(lib)
 
+    print '*'*int(SEP_LEN/2) + os.linesep
+    env['FIRST_ENTRY'] = False
+            
+#-------------------------------------------------------------------------------
+def build_dcm(target, source, env):
+    print 'create lib-doc:   \'' + os.path.basename( str(target[0]) ) + '\''
+
+    src_list = []
+    for i in xrange(len(source)):
+        src_list.append( str(source[i]) )
+
     #-------------------------------------------------------------
     #
-    #    Create doc-lib file
+    #    Create documentation file
     #
     libdoc   = 'EESchema-DOCLIB  Version 2.0' + os.linesep
     tail  = '#' + os.linesep
     tail += '#End Doc Library' + os.linesep
     
-    for i in doc_list:
+    for i in src_list:
         f = open(i, 'rb')
         libdoc += f.read()
         f.close()
         
     libdoc += tail
     
-    libdoc_name = namegen( str(target[0]), LibDocExt)
-    
-    with open( os.path.join( os.path.dirname(str(target[0])), libdoc_name), 'wb') as f:
+    with open( str(target[0]), 'wb') as f:
         f.write(libdoc)
-
-    print '*'*SEP_LEN
-
-#-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
 #
@@ -194,6 +194,10 @@ yml2cmp    = Builder(action         = create_cmp,
 cmp2lib    = Builder(action         = build_lib,
                      suffix         = LibExt,
                      src_suffix     = CmpExt)
+#-------------------------------------------------------------------------------
+dcmp2dcm   = Builder(action         = build_dcm,
+                     suffix         = LibDocExt,
+                     src_suffix     = CmpDocExt)
 #-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
@@ -211,8 +215,9 @@ LibDone    = True
 env = Environment(TOOLS = {})
 
 env['BUILDERS'] = {
-                     'yml2cmp' : yml2cmp,
-                     'cmp2lib' : cmp2lib
+                     'yml2cmp'  : yml2cmp,
+                     'cmp2lib'  : cmp2lib,
+                     'dcmp2dcm' : dcmp2dcm
                   }
 
 env['CONNGEN'    ] = CONNGEN
@@ -232,9 +237,10 @@ def make_target_dict(src_list, lib_name):
     trg_dir = os.path.join(SchCmpDir, lib_name)
                             
     for i in src_list:
-        name_ext = os.path.split(i)[1]
-        name     = os.path.splitext(name_ext)[0] + '.' + CmpExt
-        targets[i] = os.path.join(trg_dir, name)
+        name_ext   = os.path.split(i)[1]
+        cmp_name   = os.path.splitext(name_ext)[0] + '.' + CmpExt
+        dcmp_name  = os.path.splitext(name_ext)[0] + '.' + CmpDocExt
+        targets[i] = [os.path.join(trg_dir, cmp_name), os.path.join(trg_dir, dcmp_name)]
         Depends(targets[i],  'SConstruct')      
 
     return targets
@@ -244,12 +250,12 @@ def make_target_dict(src_list, lib_name):
 #   Make 'components from sources' nodes
 #
 def make_cmp(trg):
-    olist = []
+    cmp_list  = []
 
     for i in trg.items():
-        olist.append( env.yml2cmp(i[1], i[0]) )
+        cmp_list.append(  env.yml2cmp( i[1], i[0]) )
 
-    return olist
+    return cmp_list
     
 #-------------------------------------------------------------------------------
 #
@@ -257,21 +263,26 @@ def make_cmp(trg):
 #
 src_dirs = glob.glob( os.path.join(SchSrcDir, '*') )
 lib_trg_list = []         
+dcm_trg_list = []         
 for i in src_dirs:
     lib_name  = os.path.split(i)[1]
-    src_files = glob.glob( os.path.join(i, '*.' + SrcExt) )           # get source list
-    trg_dict  = make_target_dict(src_files, lib_name)                 # create source:target pairs
-    cmp_list  = make_cmp(trg_dict)                                    # create component nodes
-    lib_name  = os.path.join(SchLibDir, os.path.split(i)[1])          # generate library name
-    lib_trg   = env.cmp2lib( source = cmp_list, target = lib_name )   # create library node
-    lib_trg_list.append(lib_trg)                                      # add library node to target list
-
+    src_files = glob.glob( os.path.join(i, '*.' + SrcExt) )                          # get source list
+    trg_dict  = make_target_dict(src_files, lib_name)                                # create source:target[s] pairs
+    cmp_list  = make_cmp(trg_dict)                                                   # create component nodes
+    lib_name  = os.path.join(SchLibDir, os.path.split(i)[1])                         # generate library name
+    lib_trg   = env.cmp2lib(  source = [x[0] for x in cmp_list], target = lib_name ) # create library node
+    dcm_trg   = env.dcmp2dcm( source = [x[1] for x in cmp_list], target = lib_name ) # create lib-doc node
+    Depends(lib_trg,  'SConstruct')
+    Depends(dcm_trg,  'SConstruct')
+    lib_trg_list.append(lib_trg)                                                     # add library node to target list
+    dcm_trg_list.append(dcm_trg)                                                     # add lib-doc node to target list
+    
 #-------------------------------------------------------------------------------
 #
 #    Clean and Rebuid
 #
 def remove_files(dir_, mask):
-    file_list = glob.glob(dir_ + '/*.' + mask)
+    file_list = glob.glob(dir_ + '/**/' + '/*.' + mask)
     for i in file_list:
         os.remove(i)
 
@@ -294,7 +305,7 @@ def clean(target, source, env):
 #   Intermediate targets
 #
 clean_all = env.Alias('cln', action = clean)
-all       = lib_trg_list
+all       = [lib_trg_list, dcm_trg_list]
 
 #-------------------------------------------------------------------------------
 #
