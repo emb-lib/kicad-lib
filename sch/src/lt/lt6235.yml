@@ -5,6 +5,7 @@ NameOffset:    600
 Description:   Low-noise low-power dual OpAmp
 Keywords:      Quad Low-noise Linear Techology
 Ref:           D
+Footprint:     TSSOP-16
 PinLen:        300  # mils
 PinNameOffset: 50
 Spacing:       200  # mils
@@ -91,7 +92,7 @@ Part5:
         Side: Left
         Sep:  No
         Pins:
-            - [4, V+, 1]
+            - [4,  V+, 1]
             - [13, V-, 3]
             
 #-------------------------------------------------------------------------------
