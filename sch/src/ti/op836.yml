@@ -2,7 +2,7 @@
 
 Name:          OP836
 NameOffset:    600
-Description:   High-speed OpAmp
+Description:   High Speed OpAmp
 Ref:           D
 PinLen:        200  # mils
 PinNameOffset: 50

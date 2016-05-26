@@ -1,8 +1,8 @@
 
 Name:          AD8027
 NameOffset:    600
-Description:   High-Speed OpAmp
-Keywords:      High-Speed OpAmp Analog Devices Inc.
+Description:   High Speed OpAmp
+Keywords:      High Speed OpAmp Analog Devices Inc.
 Ref:           D
 Footprint:     SOT-23-5
 PinLen:        200  # mils

@@ -2,8 +2,8 @@
             
 Name:          ADA4940-1ACPZ
 NameOffset:    600
-Description:   High-Speed Fully Differential Amp
-Keywords:      High-Speed Amp Fully Differential Analog Devices Inc.
+Description:   High Speed Fully Differential Amp
+Keywords:      High Speed Amp Fully Differential Analog Devices Inc.
 Ref:           D
 Footprint:     LFCSP_VQ16
 PinLen:        300  # mils

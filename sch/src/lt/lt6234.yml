@@ -2,8 +2,8 @@
 #-------------------------------------------------------------------------------
 Name:          LT6234IDD
 NameOffset:    600
-Description:   Low-noise low-power dual OpAmp
-Keywords:      Dual Low-noise Linear Techology
+Description:   Low Noise Low Power Dual OpAmp
+Keywords:      Dual Low Noise Linear Techology
 Ref:           D
 Footprint:     DFN-8
 PinLen:        200  # mils
