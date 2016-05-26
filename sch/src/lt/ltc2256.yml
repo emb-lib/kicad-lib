@@ -10,8 +10,8 @@ Spacing:       200  # mils
 Filled:        Yes
 
 Part1: 
-    Caption:  [ADC, 1500, -300]
-    Sections: [1000, 1000, 1000]
+    Caption:  [ADC, 1150, -200]
+    Sections: [800, 700, 800]
                                        
     PinGroup1:
         Side: Left

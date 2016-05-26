@@ -12,8 +12,8 @@ Spacing:       200  # mils
 Filled:        Yes
 
 Part1: 
-    Caption:  ['|>', 850, -250]
-    Sections: [600, 600, 600]
+    Caption:  ['|>', 700, -250]
+    Sections: [500, 500, 500]
                                        
     PinGroup1:
         Side:   Left

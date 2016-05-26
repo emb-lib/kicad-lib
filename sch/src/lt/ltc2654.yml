@@ -10,8 +10,8 @@ Spacing:       200  # mils
 Filled:        Yes
 
 Part1: 
-    Caption:  [DAC, 1500, -300]
-    Sections: [1050, 900, 1050]
+    Caption:  [DAC, 1250, -200]
+    Sections: [900, 700, 900]
                                        
     PinGroup1:
         Side: Left
