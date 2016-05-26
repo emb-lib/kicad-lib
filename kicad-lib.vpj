@@ -83,6 +83,9 @@
                 <Folder Name="maxim">
                     <F N="sch/src/maxim/max6126.yml"/>
                 </Folder>
+                <Folder Name="st">
+                    <F N="sch/src/st/stm32f205ve.yml"/>
+                </Folder>
                 <Folder Name="ti">
                     <F N="sch/src/ti/op836.yml"/>
                     <F N="sch/src/ti/sn74lvc125.yml"/>
