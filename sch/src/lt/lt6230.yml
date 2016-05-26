@@ -1,9 +1,10 @@
 
-
-Name:          OP836
+Name:          LT6230
 NameOffset:    600
-Description:   High Speed OpAmp
+Description:   High Speed Low Noise OpAmp
+Keywords:      High Speed Low Noise OpAmp Linear Technology
 Ref:           D
+Footprint:     SOT-23-5
 PinLen:        200  # mils
 PinNameOffset: 50
 Spacing:       200  # mils
@@ -28,7 +29,7 @@ Part1:
                                                          
     PinGroup3:
         Side: Right
-        Sep:  Yes
+        Sep:  No
         Pins:
             - [5, V+, 1]
             - [2, V-, 3]

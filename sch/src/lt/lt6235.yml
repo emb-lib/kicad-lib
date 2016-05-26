@@ -2,9 +2,10 @@
 #-------------------------------------------------------------------------------
 Name:          LT6235IGN
 NameOffset:    600
-Description:   Low-noise low-power dual OpAmp
-Keywords:      Quad Low-noise Linear Techology
+Description:   Low Noise Low Power Quad OpAmp
+Keywords:      Quad Low Noise Linear Techology
 Ref:           D
+Footprint:     TSSOP-16
 PinLen:        300  # mils
 PinNameOffset: 50
 Spacing:       200  # mils
@@ -12,8 +13,8 @@ Filled:        Yes
 
 #-------------------------------------------------------------------------------
 Part1: 
-    Caption:  ['|>', 700, -250]
-    Sections: [500, 500, 500]
+    Caption:  ['|>', 550, -250]
+    Sections: [400, 400, 400]
                                        
     PinGroup1:
         Side: Left
@@ -30,8 +31,8 @@ Part1:
 
 #-------------------------------------------------------------------------------    
 Part2: 
-    Caption: ['|>', 700, -250]
-    Sections: [500, 500, 500]
+    Caption:  ['|>', 550, -250]
+    Sections: [400, 400, 400]
                                        
     PinGroup1:
         Side: Left
@@ -48,8 +49,8 @@ Part2:
 
 #-------------------------------------------------------------------------------
 Part3: 
-    Caption: ['|>', 700, -250]
-    Sections: [500, 500, 500]
+    Caption:  ['|>', 550, -250]
+    Sections: [400, 400, 400]
                                        
     PinGroup1:
         Side: Left
@@ -66,8 +67,8 @@ Part3:
 
 #-------------------------------------------------------------------------------
 Part4: 
-    Caption: ['|>', 700, -250]
-    Sections: [500, 500, 500]
+    Caption:  ['|>', 550, -250]
+    Sections: [400, 400, 400]
                                        
     PinGroup1:
         Side: Left
@@ -91,7 +92,7 @@ Part5:
         Side: Left
         Sep:  No
         Pins:
-            - [4, V+, 1]
+            - [4,  V+, 1]
             - [13, V-, 3]
             
 #-------------------------------------------------------------------------------

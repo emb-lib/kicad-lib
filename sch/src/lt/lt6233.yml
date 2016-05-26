@@ -1,9 +1,10 @@
 
-
-Name:          OP836
+Name:          AD8515
 NameOffset:    600
-Description:   High Speed OpAmp
+Description:   Low Noise Low Power Single OpAmp
+Keywords:      Low Noise Linear Techology
 Ref:           D
+Footprint:     SOT-23-5
 PinLen:        200  # mils
 PinNameOffset: 50
 Spacing:       200  # mils
@@ -28,7 +29,7 @@ Part1:
                                                          
     PinGroup3:
         Side: Right
-        Sep:  Yes
+        Sep:  No
         Pins:
             - [5, V+, 1]
             - [2, V-, 3]

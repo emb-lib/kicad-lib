@@ -1,6 +1,6 @@
 
 #-------------------------------------------------------------------------------
-Name:          UL_04_47_2-051
+Name:          UL04472-051
 NameOffset:    600
 Description:   17-um pitch 640x480 Microbolometer Detector
 Keywords:      Microbolometer Ulis
@@ -14,7 +14,7 @@ Filled:        Yes
 #-------------------------------------------------------------------------------
 Part1: 
     Caption:  
-    Sections: [750, 600, 750]
+    Sections: [650, 500, 650]
                                        
     PinGroup1:
         Side: Left
