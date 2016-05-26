@@ -1,10 +1,10 @@
 
-Name:          LT6230
+Name:          LT6230IS6
 NameOffset:    600
 Description:   High Speed Low Noise OpAmp
 Keywords:      High Speed Low Noise OpAmp Linear Technology
 Ref:           D
-Footprint:     SOT-23-5
+Footprint:     SOT-23-6
 PinLen:        200  # mils
 PinNameOffset: 50
 Spacing:       200  # mils
@@ -31,6 +31,7 @@ Part1:
         Side: Right
         Sep:  No
         Pins:
-            - [5, V+, 1]
-            - [2, V-, 3]
+            - [6, V+,  1]
+            - [5, ~EN, 2]
+            - [2, V-,  1]
 
