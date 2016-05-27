@@ -3,6 +3,7 @@ NameOffset:    600 # mils
 Description:   ARM Cortex-M3 based 32-bit MCU
 Keywords:      stm32 cortex arm st
 Ref:           D
+Footprint:     LQFP-100
 PinLen:        400 # mils
 PinNameOffset: 50  # mils
 Spacing:       200 # mils
