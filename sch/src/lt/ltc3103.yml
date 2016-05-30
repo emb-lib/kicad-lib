@@ -1,7 +1,7 @@
 Name:          LTC3103xMSE
 NameOffset:    600 # mils
-Description:   Dual-channel synchronous step-down regulator
-Keywords:      Dual-channel step-down Linear Technology
+Description:   Synchronous step-down regulator
+Keywords:      Step-down Linear Technology
 Ref:           D
 Footprint:     DFN-10
 PinLen:        400 # mils
