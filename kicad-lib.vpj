@@ -76,6 +76,7 @@
                     <F N="sch/src/lt/lt6235.yml"/>
                     <F N="sch/src/lt/ltc2256.yml"/>
                     <F N="sch/src/lt/ltc2654.yml"/>
+                    <F N="sch/src/lt/ltc3103.yml"/>
                     <F N="sch/src/lt/ltc3633.yml"/>
                 </Folder>
                 <Folder Name="marvell">
