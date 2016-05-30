@@ -10,7 +10,7 @@ Spacing:       200 # mils
 Filled:        Yes
 
 Part1:
-    Caption:
+    Caption:  [ST,  1500, -200]
     Sections: [1000, 1000, 800]
 
     PinGroup1:
