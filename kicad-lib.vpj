@@ -84,6 +84,7 @@
                     <F N="sch/src/marvell/88e6165.yml"/>
                 </Folder>
                 <Folder Name="maxim">
+                    <F N="sch/src/maxim/max3232.yml"/>
                     <F N="sch/src/maxim/max6126.yml"/>
                 </Folder>
                 <Folder Name="pulse">
