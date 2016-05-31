@@ -1,1 +1,14 @@
+#-------------------------------------------------------------------------------
+Name:          MAX3232IPW
+NameOffset:    600
+Description:   Dual-channel RS232 Transceiver
+Keywords:      RS232 Transceiver Maxim Integrated
+Ref:           D
+Footprint:     TSSOP-16
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
 
