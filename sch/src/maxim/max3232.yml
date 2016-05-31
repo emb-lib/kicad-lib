@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-Name:          MAX3232IPW
+Name:          MAX3232EUE
 NameOffset:    600
 Description:   Dual-channel RS232 Transceiver
 Keywords:      RS232 Transceiver Maxim Integrated
@@ -21,8 +21,8 @@ Part1:
         Pins:
             - [13, RIN1, 1]
             - [8,  RIN2, 1]
-            - [11, DIN1, 1]
-            - [10, DIN2, 1]
+            - [11, TIN1, 1]
+            - [10, TIN2, 1]
 
     PinGroup2:
         Side: Right
@@ -30,8 +30,8 @@ Part1:
         Pins:
             - [12, ROUT1, 1]
             - [9,  ROUT2, 1]
-            - [14, DOUT1, 1]
-            - [7,  DOUT2, 1]
+            - [14, TOUT1, 1]
+            - [7,  TOUT2, 1]
 
     PinGroup3:
         Side: Left
