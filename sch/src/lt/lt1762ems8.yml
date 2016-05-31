@@ -1,0 +1,31 @@
+Name:          LT1762EMS8
+NameOffset:    600
+Description:   Low Noise Low Drop Adjustable Linear Regulator
+Keywords:      Low Noise Low Drop Linear Techology
+Ref:           D
+Footprint:     MSOP-8
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+Part1: 
+    Caption:
+    Sections: [1000]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [8, IN,  1]
+            - [5, SDn, 3]
+            - [4, GND, 1]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [1,  OUT, 1]
+            - [4,  BYP, 3]
+            - [2,  ADJ, 1]
+
