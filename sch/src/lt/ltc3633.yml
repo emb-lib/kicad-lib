@@ -1,0 +1,69 @@
+Name:          LTC3633xUFD
+NameOffset:    600 # mils
+Description:   Dual-channel synchronous step-down regulator
+Keywords:      Dual-channel step-down Linear Technology
+Ref:           D
+Footprint:     QFN-28
+PinLen:        400 # mils
+PinNameOffset: 50  # mils
+Spacing:       200 # mils
+Filled:        Yes
+
+Part1:
+    Caption:  [ST,  1500, -200]
+    Sections: [1000, 1000, 800]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [21, VIN1, 1]
+            - [22, VIN1, 1]
+            - [15, VIN2, 2]
+            - [16, VIN2, 1]
+            - [3,  RUN1, 2]
+            - [6,  RUN2, 1]
+
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [19, INTVCC,    1]
+            - [2,  PHMODE,    1]
+            - [4,  MODE/SYNC, 1]
+            - [5,  RT,        1]
+            - [26, ITH1,      1]
+            - [11, ITH2,      1]
+            - [18, V2P5,      1]
+            - [27, TRACKSS1,  1]
+            - [10, TRACKSS2,  1]
+
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [7,  SGND, 1]
+            - [29, PGND, 1]
+
+    PinGroup4:
+        Height: 11
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [20, BOOST1, 1]
+            - [23, SW1,    3]
+            - [24, SW1,    1]
+            - [25, VON1,   1]
+            - [28, VFB1,   2]
+            - [1,  PGOOD1, 1]
+
+    PinGroup5:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [17, BOOST2, 1]
+            - [13, SW2,    3]
+            - [14, SW2,    1]
+            - [12, VON2,   1]
+            - [9,  VFB2,   2]
+            - [8,  PGOOD2, 1]

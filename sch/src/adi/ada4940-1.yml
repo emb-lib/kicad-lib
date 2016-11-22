@@ -1,0 +1,64 @@
+            
+            
+Name:          ADA4940-1ACPZ
+NameOffset:    600
+Description:   High Speed Fully Differential Amp
+Keywords:      High Speed Amp Fully Differential Analog Devices Inc.
+Ref:           D
+Footprint:     LFCSP_VQ16
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+Part1: 
+    Caption:  ['|>', 700, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side:   Left
+        Sep:    Yes
+        Pins:
+            - [1, FB-, 1]
+            - [2, IN+, 2]
+            - [3, IN-, 2]
+            - [4, FB+, 2]
+                                                         
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [12, ~PD, 1]
+
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [5, VS+, 1]
+            - [6, VS+, 1]
+            - [7, VS+, 1]
+            - [8, VS+, 1]
+
+    PinGroup4:
+        Side:   Right
+        Sep:    Yes
+        Height: 8
+        Pins:
+            - [11, OUT-, 1]
+            - [10, OUT+, 3]
+                                                         
+    PinGroup5:
+        Side:  Right
+        Sep:   Yes
+        Pins:
+            - [9, VOCM, 1]
+
+    PinGroup6:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [13, VS-, 1]
+            - [14, VS-, 1]
+            - [15, VS-, 1]
+            - [16, VS-, 1]
+

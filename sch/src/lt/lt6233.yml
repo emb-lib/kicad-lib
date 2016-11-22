@@ -1,0 +1,37 @@
+
+Name:          LT6233IS6
+NameOffset:    600
+Description:   Low Noise Low Power Single OpAmp
+Keywords:      Low Noise Linear Techology
+Ref:           D
+Footprint:     SOT-23-6
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+Part1: 
+    Caption:  ['|>', 550, -250]
+    Sections: [400, 400, 400]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [3, IN+, 1]
+            - [4, IN-, 3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [1, OUT, 1]
+                                                         
+    PinGroup3:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [6, V+,  1]
+            - [5, ~EN, 2]
+            - [2, V-,  1]
+

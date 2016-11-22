@@ -1,0 +1,107 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    WorkingDir="."
+    VCSProject="Subversion:">
+    <Config
+        Name="Release"
+        OutputFile=""
+        CompilerConfigName="Latest Version">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                SaveOption="SaveAll"
+                RunFromDir="%rw"
+                CaptureOutputWith="ProcessBuffer"
+                ClearProcessBuffer="1">
+                <Exec CmdLine="scons -Q -s -D Obj/%n.o"/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveAll"
+                RunFromDir="%rw"
+                ClearProcessBuffer="1">
+                <Exec CmdLine="scons -Q -s -D all"/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw"
+                ClearProcessBuffer="1">
+                <Exec CmdLine="scons -Q -s -D rebuild"/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveAll"
+                RunFromDir="%rw"
+                ClearProcessBuffer="1"
+                CaptureOutputWith="ProcessBuffer">
+                <Exec CmdLine="scons -Q -s -D load"/>
+            </Target>
+        </Menu>
+    </Config>
+    <CustomFolders>
+        <Folder
+            Name="Schematic"
+            Filters="*.yml"></Folder>
+        <Folder
+            Name="PCB"
+            Filters=""/>
+    </CustomFolders>
+    <Files AutoFolders="DirectoryView">
+        <Folder Name="sch">
+            <Folder Name="src">
+                <Folder Name="adi">
+                    <F N="sch/src/adi/ad8027.yml"/>
+                    <F N="sch/src/adi/ad8515.yml"/>
+                    <F N="sch/src/adi/ad8603.yml"/>
+                    <F N="sch/src/adi/ada4940-1.yml"/>
+                </Folder>
+                <Folder Name="cypress">
+                    <F N="sch/src/cypress/fm25vn10.yml"/>
+                </Folder>
+                <Folder Name="lt">
+                    <F N="sch/src/lt/lt1761es5-byp.yml"/>
+                    <F N="sch/src/lt/lt1761es5-xx.yml"/>
+                    <F N="sch/src/lt/lt1762ems8.yml"/>
+                    <F N="sch/src/lt/lt6230.yml"/>
+                    <F N="sch/src/lt/lt6233.yml"/>
+                    <F N="sch/src/lt/lt6234.yml"/>
+                    <F N="sch/src/lt/lt6235.yml"/>
+                    <F N="sch/src/lt/ltc2256.yml"/>
+                    <F N="sch/src/lt/ltc2654.yml"/>
+                    <F N="sch/src/lt/ltc3103.yml"/>
+                    <F N="sch/src/lt/ltc3633.yml"/>
+                </Folder>
+                <Folder Name="marvell">
+                    <F N="sch/src/marvell/88e6165.yml"/>
+                </Folder>
+                <Folder Name="maxim">
+                    <F N="sch/src/maxim/max3232.yml"/>
+                    <F N="sch/src/maxim/max6126.yml"/>
+                </Folder>
+                <Folder Name="pulse">
+                    <F N="sch/src/pulse/hx5004nl.yml"/>
+                </Folder>
+                <Folder Name="st">
+                    <F N="sch/src/st/stm32f205ve.yml"/>
+                </Folder>
+                <Folder Name="ti">
+                    <F N="sch/src/ti/op836.yml"/>
+                    <F N="sch/src/ti/sn74lvc125.yml"/>
+                </Folder>
+                <Folder Name="ulis">
+                    <F N="sch/src/ulis/ul04472-051.yml"/>
+                </Folder>
+            </Folder>
+        </Folder>
+        <F N="SConstruct"/>
+    </Files>
+</Project>
