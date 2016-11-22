@@ -1,0 +1,58 @@
+Name:          HX5004NL
+NameOffset:    600 # mils
+Description:   Pulse LAN Discrete Transformer
+Keywords:      Pulse LAN Transformer
+Ref:           D
+Footprint:     DFN-10
+PinLen:        400 # mils
+PinNameOffset: 50  # mils
+Spacing:       200 # mils
+Filled:        Yes
+
+Part1:
+    Caption:  ['*TR', 750, -200]
+    Sections: [500, 500, 500]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [2,  TD1+, 1]
+            - [3,  TD1-, 1]
+            - [5,  TD2+, 2]
+            - [6,  TD2-, 1]
+            - [8,  TD3+, 2]
+            - [9,  TD3-, 1]
+            - [11, TD4+, 2]
+            - [12, TD4-, 1]
+
+    PinGroup2:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [1,  TCT1, 1]
+            - [4,  TCT2, 1]
+            - [7,  TCT3, 1]
+            - [10, TCT4, 1]
+
+    PinGroup3:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [23, MX1+, 1]
+            - [22, MX1-, 1]
+            - [20, MX2+, 2]
+            - [19, MX2-, 1]
+            - [17, MX3+, 2]
+            - [16, MX3-, 1]
+            - [14, MX4+, 2]
+            - [13, MX4-, 1]
+
+    PinGroup4:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [24, MCT1, 1]
+            - [21, MCT2, 1]
+            - [18, MCT3, 1]
+            - [15, MCT4, 1]

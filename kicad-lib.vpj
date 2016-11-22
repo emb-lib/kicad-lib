@@ -70,18 +70,25 @@
                 <Folder Name="lt">
                     <F N="sch/src/lt/lt1761es5-byp.yml"/>
                     <F N="sch/src/lt/lt1761es5-xx.yml"/>
+                    <F N="sch/src/lt/lt1762ems8.yml"/>
                     <F N="sch/src/lt/lt6230.yml"/>
                     <F N="sch/src/lt/lt6233.yml"/>
                     <F N="sch/src/lt/lt6234.yml"/>
                     <F N="sch/src/lt/lt6235.yml"/>
                     <F N="sch/src/lt/ltc2256.yml"/>
                     <F N="sch/src/lt/ltc2654.yml"/>
+                    <F N="sch/src/lt/ltc3103.yml"/>
+                    <F N="sch/src/lt/ltc3633.yml"/>
                 </Folder>
                 <Folder Name="marvell">
                     <F N="sch/src/marvell/88e6165.yml"/>
                 </Folder>
                 <Folder Name="maxim">
+                    <F N="sch/src/maxim/max3232.yml"/>
                     <F N="sch/src/maxim/max6126.yml"/>
+                </Folder>
+                <Folder Name="pulse">
+                    <F N="sch/src/pulse/hx5004nl.yml"/>
                 </Folder>
                 <Folder Name="st">
                     <F N="sch/src/st/stm32f205ve.yml"/>

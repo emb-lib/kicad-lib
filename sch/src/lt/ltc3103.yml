@@ -1,0 +1,40 @@
+Name:          LTC3103xMSE
+NameOffset:    600 # mils
+Description:   Synchronous step-down regulator
+Keywords:      Step-down Linear Technology
+Ref:           D
+Footprint:     DFN-10
+PinLen:        400 # mils
+PinNameOffset: 50  # mils
+Spacing:       200 # mils
+Filled:        Yes
+
+Part1:
+    Caption:  [ST, 750, -200]
+    Sections: [500, 500, 500]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [1,  VIN,  1]
+            - [7,  RUN,  2]
+            - [10, MODE, 1]
+            - [6,  VCC,  1]
+
+    PinGroup2:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [4,  GND, 2]
+            - [11, GND, 1]
+            
+    PinGroup3:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [3, BST, 1]
+            - [2, SW,  3]
+            - [8, FB,  4]
+            - [5, PG,  1]
+
