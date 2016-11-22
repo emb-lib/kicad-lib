@@ -1,5 +1,5 @@
 
-Name:          LTC2654BIGN-H16#PBF
+Name:          LTC2654BIGN-H16-PBF
 Description:   16-Bit,4-Channel Voltage-Output DAC
 Keywords:      DAC 4-Channel Linear Techology
 Ref:           D
@@ -34,7 +34,7 @@ Part1:
         Side: Left
         Sep:  No
         Pins:
-            - [8,  REFIN/OUT, 1]
+            - [5,  REFIN/OUT, 1]
             - [3,  REFCOMP,   1]
             - [1,  REFLO,     1]
 
