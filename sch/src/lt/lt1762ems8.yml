@@ -26,6 +26,6 @@ Part1:
         Sep:  No
         Pins:
             - [1,  OUT, 1]
-            - [4,  BYP, 3]
+            - [3,  BYP, 3]
             - [2,  ADJ, 1]
 
