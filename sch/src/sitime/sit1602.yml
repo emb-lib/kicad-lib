@@ -1,0 +1,28 @@
+Name:          SIT1602
+NameOffset:    600 # mils
+Description:   Low Power Standart Frequency Oscillator SiTime
+Keywords:      Frequency Oscillator SiTime
+Ref:           D
+PinLen:        400 # mils
+PinNameOffset: 50  # mils
+Spacing:       200 # mils
+Filled:        Yes
+
+Part1:
+    Caption:
+    Sections: [1000]
+    
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [4, VDD,    1]
+            - [1, OE/nST, 1]
+            - [2, GND,    2]
+
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [3, OUT, 1]
+
