@@ -1,0 +1,36 @@
+#-------------------------------------------------------------------------------
+Name:          THD
+NameOffset:    600
+Description:   THD Series Isolated DC/DC Converter
+Keywords:      THD Isolated DC/DC Converter Traco Power
+Ref:           D
+Footprint:     THD
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  [ST,  1500, -200]
+    Sections: [1000, 1000, 1100]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [22, +VIN, 1]
+            - [23, +VIN, 1]
+            - [1,   ENA, 1]
+            - [2,  -VIN, 2]
+            - [3,  -VIN, 1]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [14, +VOUT,      1]
+            - [9,  NC/COMM,    2]
+            - [11, NC/-VOUT,   1]
+            - [16, -VOUT/COMM, 2]
+#-------------------------------------------------------------------------------    
