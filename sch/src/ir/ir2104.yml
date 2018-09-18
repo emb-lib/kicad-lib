@@ -1,0 +1,35 @@
+#-------------------------------------------------------------------------------
+Name:          IR2104S
+NameOffset:    600
+Description:   Half-bridge IGBT and MOSFET Driver 
+Keywords:      Half-bridge IGBT MOSFET Driver IRF International Rectifier
+Ref:           D
+Footprint:     SOIC-8
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+
+Part1: 
+    Caption:  []
+    Sections: [400, 400, 400]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [1, VCC, 1]
+            - [2, IN , 1]
+            - [3, ~SD, 1]
+            - [4, COM, 1]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [8, Vb,  1]
+            - [7, HO,  1]
+            - [6, Vs,  1]
+            - [5, LO,  1]

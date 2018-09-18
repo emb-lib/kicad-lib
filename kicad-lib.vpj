@@ -67,6 +67,9 @@
                 <Folder Name="cypress">
                     <F N="sch/src/cypress/fm25vn10.yml"/>
                 </Folder>
+                <Folder Name="ir">
+                    <F N="sch/src/ir/ir2104.yml"/>
+                </Folder>
                 <Folder Name="lt">
                     <F N="sch/src/lt/lt1761es5-byp.yml"/>
                     <F N="sch/src/lt/lt1761es5-xx.yml"/>
