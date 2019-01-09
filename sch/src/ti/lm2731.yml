@@ -1,0 +1,33 @@
+#-------------------------------------------------------------------------------
+Name:          LM2731
+NameOffset:    600
+Description:   Boost DC/DC converter
+Keywords:      Boost DC/DC converter Texas Instruments
+Ref:           D
+Footprint:     SOT-23-5
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+
+Part1: 
+    Caption:  [ST, 600, -200]
+    Sections: [400, 400, 400]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [5, Vin,  1]
+            - [4, ~SDN, 1]
+            - [2, GND,  2]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [1, SW,  1]
+            - [3, FB,  3]
+
