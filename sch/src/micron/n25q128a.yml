@@ -1,0 +1,35 @@
+
+#-------------------------------------------------------------------------------
+Name:          N25Q128A
+NameOffset:    600
+Description:   Multiple I/O Serial Flash Memory
+Keywords:      Quad SPI NOR Serial Flash Memory Micron
+Ref:           D
+PinLen:        200  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  [M,   1250, -200]
+    Sections: [1000, 500, 1000]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [1, ~S,         1]
+            - [2, DQ1,        1]
+            - [3, DQ2/Vpp/~W, 1]
+            - [4, Vss,        1]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [5,  DQ0,       1]
+            - [6,  C,         1]
+            - [7,  DQ3/~HOLD, 1]
+            - [8,  Vcc,       1]
+#-------------------------------------------------------------------------------    
