@@ -107,6 +107,9 @@
                 <Folder Name="ulis">
                     <F N="sch/src/ulis/ul04472-051.yml"/>
                 </Folder>
+                <Folder Name="xilinx">
+                    <F N="sch/src/xilinx/xc7a200t-fbg484.yml"/>
+                </Folder>
             </Folder>
         </Folder>
         <F N="SConstruct"/>
