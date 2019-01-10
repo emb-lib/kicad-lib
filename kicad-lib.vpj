@@ -96,6 +96,9 @@
                 <Folder Name="pulse">
                     <F N="sch/src/pulse/hx5004nl.yml"/>
                 </Folder>
+                <Folder Name="sitime">
+                    <F N="sch/src/sitime/sit1602.yml"/>
+                </Folder>
                 <Folder Name="st">
                     <F N="sch/src/st/stm32f205ve.yml"/>
                 </Folder>
