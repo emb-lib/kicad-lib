@@ -26,15 +26,15 @@ Part1:
         Side: Right
         Sep:  Yes
         Pins:
-            - [7, IN1,  1]
-            - [3, IN2,  1]
+            - [1, NO1,  1]
+            - [5, NO2,  1]
             
     PinGroup3:
         Side: Left
         Sep:  No
         Pins:
-            - [1, NO1,  1]
-            - [5, NO2,  1]
+            - [7, IN1,  1]
+            - [3, IN2,  1]
 
     PinGroup4:
         Side: Right
