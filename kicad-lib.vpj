@@ -67,6 +67,9 @@
                 <Folder Name="cypress">
                     <F N="sch/src/cypress/fm25vn10.yml"/>
                 </Folder>
+                <Folder Name="digilent">
+                    <F N="sch/src/digilent/jtag-smt3-nc.yml"/>
+                </Folder>
                 <Folder Name="ir">
                     <F N="sch/src/ir/ir2104.yml"/>
                 </Folder>
