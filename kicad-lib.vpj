@@ -106,6 +106,7 @@
                     <F N="sch/src/ti/lm2731.yml"/>
                     <F N="sch/src/ti/op836.yml"/>
                     <F N="sch/src/ti/sn74lvc125.yml"/>
+                    <F N="sch/src/ti/ts5a21366.yml"/>
                 </Folder>
                 <Folder Name="tracopower">
                     <F N="sch/src/tracopower/thd.yml"/>

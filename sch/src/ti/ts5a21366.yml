@@ -1,0 +1,44 @@
+
+#-------------------------------------------------------------------------------
+Name:          TS5A21366
+NameOffset:    600
+Description:   2-channel SPST Analog Switch
+Keywords:      2-channel SPST Analog Switch Ti
+Ref:           D
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  
+    Sections: [500, 500, 500]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [2, COM1, 1]
+            - [6, COM2, 1]
+            
+    PinGroup2:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [7, IN1,  1]
+            - [3, IN2,  1]
+            
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [1, NO1,  1]
+            - [5, NO2,  1]
+
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [8, VCC,  1]
+            - [4, GND,  3]
