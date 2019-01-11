@@ -5,7 +5,7 @@ NameOffset:    600
 Description:   Multiple I/O Serial Flash Memory
 Keywords:      Quad SPI NOR Serial Flash Memory Micron
 Ref:           D
-PinLen:        200  # mils
+PinLen:        300  # mils
 PinNameOffset: 50
 Spacing:       200  # mils
 Filled:        Yes
