@@ -109,6 +109,7 @@
                     <F N="sch/src/ti/lm2731.yml"/>
                     <F N="sch/src/ti/op836.yml"/>
                     <F N="sch/src/ti/sn74lvc125.yml"/>
+                    <F N="sch/src/ti/sn74lvc1t45.yml"/>
                     <F N="sch/src/ti/tpd2s017.yml"/>
                     <F N="sch/src/ti/ts5a21366.yml"/>
                 </Folder>
