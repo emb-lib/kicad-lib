@@ -1,0 +1,167 @@
+
+#-------------------------------------------------------------------------------
+Name:          MT41K256M16
+NameOffset:    600
+Description:   256M16 DDR3L SDRAM
+Keywords:      256M16 DDR3L SDRAM Micron
+Ref:           D
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  [M,   1250, -200]
+    Sections: [1000, 500, 1000]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins: 
+            - [K9, CKE,     1]
+            - [L2, ~CS,     1]
+            - [K1, ODT,     1]
+            - [J3, ~RAS,    1]
+            - [K3, ~CAS,    1]
+            - [L3, ~WE,     1]
+            - [T2, ~RESET,  1]
+            
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins: 
+            - [J7, CK,      1]
+            - [K7, ~CK,     1]
+
+    PinGroup3:
+        Side: Left
+        Sep:  Yes
+        Pins: 
+            - [M2, BA0,     1]
+            - [N8, BA1,     1]
+            - [M3, BA2,     1]
+
+    PinGroup4:
+        Side: Left
+        Sep:  Yes
+        Pins: 
+            - [N3, A0,      1]
+            - [P7, A1,      1]
+            - [P3, A2,      1]
+            - [N2, A3,      1]
+            - [P8, A4,      1]
+            - [P2, A5,      1]
+            - [R8, A6,      1]
+            - [R2, A7,      1]
+            - [T8, A8,      1]
+            - [R3, A9,      1]
+            - [L7, A10/AP,  1]
+            - [R7, A11,     1]
+            - [N7, A12/~BC, 1]
+            - [T3, A13,     1]
+            - [T7, A14,     1]
+
+    PinGroup5:
+        Side: Right
+        Sep:  Yes
+        Pins: 
+            - [F3, LDQS,    1]
+            - [G3, ~LDQS,   1]
+            - [E3, DQ0,     1]
+            - [F7, DQ1,     1]
+            - [F2, DQ2,     1]
+            - [F8, DQ3,     1]
+            - [H3, DQ4,     1]
+            - [H8, DQ5,     1]
+            - [G2, DQ6,     1]
+            - [H7, DQ7,     1]
+            - [E7, LDM,     1]
+
+    PinGroup6:
+        Side: Right
+        Sep:  Yes
+        Pins: 
+            - [C7, UDQS,    1]
+            - [B7, ~UDQS,   1]
+            - [D7, DQ8,     1]
+            - [C3, DQ9,     1]
+            - [C8, DQ10,    1]
+            - [C2, DQ11,    1]
+            - [A7, DQ12,    1]
+            - [A2, DQ13,    1]
+            - [B8, DQ14,    1]
+            - [A3, DQ15,    1]
+            - [D3, UDM,     1]
+            
+    PinGroup7:
+        Side: Right
+        Sep:  No
+        Pins: 
+            - [M8, VREFCA,  3]
+            - [H1, VREFDQ,  1]
+            - [L8, ZQ,      1]
+
+Part2:
+    Caption:  [M,   1250, -200]
+    Sections: [1000, 500, 1000]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Height: 13
+        Pins: 
+            - [B2, VDD,  1]  
+            - [D9, VDD,  1]  
+            - [G7, VDD,  1]  
+            - [K2, VDD,  1]  
+            - [K8, VDD,  1]  
+            - [N1, VDD,  1]  
+            - [N9, VDD,  1]  
+            - [R1, VDD,  1]  
+            - [R9, VDD,  1]  
+
+    PinGroup2:
+        Side: Right
+        Sep:  Yes
+        Pins: 
+            - [A9, VSS,  1] 
+            - [B3, VSS,  1] 
+            - [E1, VSS,  1] 
+            - [G8, VSS,  1] 
+            - [J2, VSS,  1] 
+            - [J8, VSS,  1] 
+            - [M1, VSS,  1] 
+            - [M9, VSS,  1] 
+            - [P1, VSS,  1] 
+            - [P9, VSS,  1]  
+            - [T1, VSS,  1]  
+            - [T9, VSS,  1]  
+
+    PinGroup3:
+        Side: Left
+        Sep:  Yes
+        Pins: 
+            - [A1, VDDQ, 1] 
+            - [A8, VDDQ, 1] 
+            - [C1, VDDQ, 1] 
+            - [C9, VDDQ, 1] 
+            - [D2, VDDQ, 1]  
+            - [E9, VDDQ, 1]  
+            - [F1, VDDQ, 1]  
+            - [H2, VDDQ, 1]  
+            - [H9, VDDQ, 1] 
+
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins: 
+            - [B1, VSSQ, 1] 
+            - [B9, VSSQ, 1] 
+            - [D1, VSSQ, 1] 
+            - [D8, VSSQ, 1] 
+            - [E2, VSSQ, 1]  
+            - [E8, VSSQ, 1]  
+            - [F9, VSSQ, 1]  
+            - [G1, VSSQ, 1]  
+            - [G9, VSSQ, 1]  
