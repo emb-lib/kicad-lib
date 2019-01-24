@@ -1,0 +1,29 @@
+Name:          SIT9102
+NameOffset:    600 # mils
+Description:   Low Power Standart Frequency Oscillator SiTime
+Keywords:      Frequency Oscillator SiTime
+Ref:           D
+PinLen:        300 # mils
+PinNameOffset: 50  # mils
+Spacing:       200 # mils
+Filled:        Yes
+
+Part1:
+    Caption:
+    Sections: [1000]
+    
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [6, VDD,    1]
+            - [1, OE/~ST, 1]
+            - [3, GND,    2]
+
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [4, OUT+,   1]
+            - [5, OUT-,   3]
+

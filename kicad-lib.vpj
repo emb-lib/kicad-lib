@@ -102,6 +102,7 @@
                 </Folder>
                 <Folder Name="sitime">
                     <F N="sch/src/sitime/sit1602.yml"/>
+                    <F N="sch/src/sitime/sit9102.yml"/>
                 </Folder>
                 <Folder Name="st">
                     <F N="sch/src/st/stm32f205ve.yml"/>
