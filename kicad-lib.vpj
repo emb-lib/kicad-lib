@@ -109,7 +109,9 @@
                 </Folder>
                 <Folder Name="ti">
                     <F N="sch/src/ti/lm2731.yml"/>
+                    <F N="sch/src/ti/lm86.yml"/>
                     <F N="sch/src/ti/op836.yml"/>
+                    <F N="sch/src/ti/ref3012.yml"/>
                     <F N="sch/src/ti/sn74lvc125.yml"/>
                     <F N="sch/src/ti/sn74lvc1t45.yml"/>
                     <F N="sch/src/ti/tpd2s017.yml"/>

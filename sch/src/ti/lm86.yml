@@ -1,0 +1,42 @@
+
+#-------------------------------------------------------------------------------
+Name:          LM86
+NameOffset:    600
+Description:   Remote Diode and Local Digital Temperature Sensor With Two-Wire Interface
+Keywords:      Temperature Sensor Two-Wire Interface I2C SMBus Texas Instruments
+Ref:           D
+Footprint:     SOT-23
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:
+    Sections: [1000, 500, 500]
+                                       
+    PinGroup1:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [2, D+,  1]
+            - [3, D-,  3]
+                                                         
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [1, VDD, 1]
+            - [5, GND, 3]
+                                                         
+    PinGroup3:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [8, SMBCLK,    1]
+            - [7, SMBData,   1]
+            - [6, ~ALERT,    1]
+            - [4, ~T_CRIT_A, 1]
+
+

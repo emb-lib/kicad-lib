@@ -1,0 +1,31 @@
+
+#-------------------------------------------------------------------------------
+Name:          REF3012
+NameOffset:    600
+Description:   Precision Low-power Low-dropout Voltage Reference Texas Instruments
+Keywords:      LDO Voltage Reference Texas Instruments
+Ref:           D
+Footprint:     SOT-23
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:
+    Sections: [1000]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [1, IN,  1]
+            - [3, GND, 3]
+                                                         
+    PinGroup2:
+        Side: Rigth
+        Sep:  No
+        Pins:
+            - [2, OUT, 1]
+
