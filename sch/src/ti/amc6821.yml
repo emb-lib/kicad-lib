@@ -1,0 +1,58 @@
+
+#-------------------------------------------------------------------------------
+Name:          AMC6821
+NameOffset:    600
+Description:   Intelligent Temperature Monitor and PWM Fan Controller
+Keywords:      Temperature Sensor PWM Fan Two-Wire Interface I2C SMBus Texas Instruments
+Ref:           D
+Footprint:     SSOP-16
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:
+    Sections: [1000, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [16, PMCLK,      1]
+            - [15, PMDAT,      1]
+            - [14, ~PMALERT,   1]
+            - [13, A0,         1]
+            - [12, A1,         1]
+
+    PinGroup2:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [3,  ~OVR,       1]
+            - [7,  ~THERM,     1]
+            - [8,  ~FAN-FAULT, 1]
+
+    PinGroup3:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [10, IN+,        1]
+            - [9,  IN-,        1]
+
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [1,  PWM,        1]
+            - [2,  TACH,       1]
+            - [11, MODE,       1]
+
+    PinGroup5:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [6,  VDD,        1]
+            - [5,  GND,        3]
+

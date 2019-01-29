@@ -108,6 +108,7 @@
                     <F N="sch/src/st/stm32f205ve.yml"/>
                 </Folder>
                 <Folder Name="ti">
+                    <F N="sch/src/ti/amc6821.yml"/>
                     <F N="sch/src/ti/lm2731.yml"/>
                     <F N="sch/src/ti/lm86.yml"/>
                     <F N="sch/src/ti/op836.yml"/>
