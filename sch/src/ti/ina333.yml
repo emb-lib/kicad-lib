@@ -1,0 +1,55 @@
+
+#-------------------------------------------------------------------------------
+Name:          INA333
+NameOffset:    600
+Description:   Low-Power Zero-Drift Instrumentation Amplifier
+Keywords:      Instrumentation Amplifier Texas Instruments TI
+Ref:           D
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  ['|>', 750, -250]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [1, RG,  1]
+
+    PinGroup2:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [8, RG,  1]
+
+    PinGroup3:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [3, IN+, 1]
+            - [2, IN-, 1]
+
+    PinGroup4:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [6, OUT, 1]
+            - [5, REF, 1]
+
+    PinGroup5:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [7, V+,  1]
+
+    PinGroup6:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [4, V-,  1]
+
