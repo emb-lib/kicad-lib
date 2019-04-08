@@ -1,0 +1,33 @@
+#-------------------------------------------------------------------------------
+Name:          MAX16052
+NameOffset:    600
+Description:   Adjustable Voltage Supervisor
+Keywords:      Adjustable Supervisor Maxim Integrated
+Ref:           D
+Footprint:     SOT-23-6
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  []
+    Sections: [1000]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [3, IN,  1]
+            - [8, EN,  1]
+            - [2, VCC, 1]
+            - [5, GND, 3]
+
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [4, OUT, 1]
+            - [6, CDELAY, 3]
+
