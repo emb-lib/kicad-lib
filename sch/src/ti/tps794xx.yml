@@ -1,0 +1,33 @@
+
+#-------------------------------------------------------------------------------
+Name:          TPS794xxDCQ
+NameOffset:    600
+Description:   250mA TPS794 Series Ultralow-noise High-PSRR Low-Dropout Regulator
+Keywords:      LDO LOw Dropout Texas Instruments TI
+Ref:           D
+Footprint:     SOT223-6
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  [ST, 500, -200]
+    Sections: [1000]
+
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [2, IN,  1]
+            - [1, EN,  1]
+            - [3, GND, 3]
+            - [6, GND, 1]
+
+    PinGroup2:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [4, OUT, 1]
+            - [5, NR,  4]

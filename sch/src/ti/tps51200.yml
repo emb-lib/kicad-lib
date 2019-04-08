@@ -1,0 +1,42 @@
+
+#-------------------------------------------------------------------------------
+Name:          TPS51200
+NameOffset:    600
+Description:   Sink and Source DDR Termination Regulator
+Keywords:      DDR Termination Regulator Reference TI
+Ref:           D
+Footprint:     VSON-10
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  [ST,  1000, -200]
+    Sections: [750, 500, 750]
+
+    PinGroup1:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [10, VIN,   1]
+            - [7,  ENA,   4]
+            - [9,  PGOOD, 1]
+            - [8,  GND,   2]
+
+    PinGroup2:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [1,  REFIN,  1]
+            - [2,  VLDOIN, 1]
+
+    PinGroup3:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [6,  REFOUT, 1]
+            - [3,  VO,     1]
+            - [5,  VOSNS,  1]
+            - [4,  PGND,   2]

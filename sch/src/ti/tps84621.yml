@@ -1,0 +1,92 @@
+
+#-------------------------------------------------------------------------------
+Name:          TPS84621
+NameOffset:    600
+Description:   6A Synchronous Buck Integrated Power Solution
+Keywords:      Power Nodule Synchronous Buck Texas Instruments TI
+Ref:           D
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  [ST,  1250, -200]
+    Sections: [1000, 500, 1000]
+
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [39, PVIN,     1]
+            - [40, PVIN,     1]
+            - [41, PVIN,     1]
+            - [42, VIN,      1]
+
+    PinGroup2:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [8,  INH/UVLO, 1]
+            - [9,  INH/UVLO, 1]
+            - [43, VADJ,     1]
+
+    PinGroup3:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [5,  ISHARE,   1]
+            - [35, RT/CLK,   1]
+            - [6,  SS/TR,    1]
+            - [7,  STSEL,    1]    
+
+    PinGroup4:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [33, PWRGD,    1]
+
+    PinGroup5:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [1,  AGND,     2]
+            - [2,  AGND,     1]
+            - [34, AGND,     1]
+            - [45, AGND,     1]
+
+    PinGroup6:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [10, PH,       1]
+            - [11, PH,       1]
+            - [12, PH,       1]
+            - [13, PH,       1]
+            - [14, PH,       1]
+            - [17, PH,       1]
+            - [46, PH,       1]
+
+
+    PinGroup7:
+        Side: Right
+        Sep:  Yes
+        Pins:
+            - [44, SENSE+,   1]
+            - [21, VOUT,     1]
+            - [24, VOUT,     1]
+            - [25, VOUT,     1]
+            - [26, VOUT,     1]
+            - [27, VOUT,     1]
+            - [28, VOUT,     1]
+            - [29, VOUT,     1]
+            - [47, VOUT,     1]
+
+    PinGroup8:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [36, PGND,     1]
+            - [37, PGND,     1]
+            - [38, PGND,     1]
