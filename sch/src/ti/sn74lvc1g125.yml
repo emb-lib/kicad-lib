@@ -1,0 +1,38 @@
+
+#-------------------------------------------------------------------------------
+Name:          SN74LVC1G125DBV
+NameOffset:    600
+Description:   Single Bus Buffer Gate With 3-State Output
+Keywords:      Single Bus Buffer Gate 3-State Texas Instruments
+Ref:           D
+Footprint:     SOT-23-5
+PinLen:        300  # mils
+PinNameOffset: 50
+Spacing:       200  # mils
+Filled:        Yes
+
+#-------------------------------------------------------------------------------
+Part1: 
+    Caption:  [BUF, 750, -200]
+    Sections: [500, 500, 500]
+                                       
+    PinGroup1:
+        Side: Left
+        Sep:  Yes
+        Pins:
+            - [2, A,   1]
+            - [1, ~OE, 1]
+
+    PinGroup2:
+        Side: Left
+        Sep:  No
+        Pins:
+            - [5, VCC, 1]
+            - [3, GND, 3]
+
+    PinGroup3:
+        Side: Right
+        Sep:  No
+        Pins:
+            - [4, Y,   1]
+
