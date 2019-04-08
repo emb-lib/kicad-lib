@@ -90,12 +90,16 @@
                     <F N="sch/src/marvell/88e6165.yml"/>
                 </Folder>
                 <Folder Name="maxim">
+                    <F N="sch/src/maxim/max16052.yml"/>
                     <F N="sch/src/maxim/max3232.yml"/>
                     <F N="sch/src/maxim/max6126.yml"/>
                 </Folder>
                 <Folder Name="micron">
                     <F N="sch/src/micron/mt41k256m16.yml"/>
                     <F N="sch/src/micron/n25q128a.yml"/>
+                </Folder>
+                <Folder Name="murata">
+                    <F N="sch/src/murata/bnx010.yml"/>
                 </Folder>
                 <Folder Name="pulse">
                     <F N="sch/src/pulse/hx5004nl.yml"/>
@@ -109,14 +113,22 @@
                 </Folder>
                 <Folder Name="ti">
                     <F N="sch/src/ti/amc6821.yml"/>
+                    <F N="sch/src/ti/ina333.yml"/>
                     <F N="sch/src/ti/lm2731.yml"/>
                     <F N="sch/src/ti/lm86.yml"/>
+                    <F N="sch/src/ti/lmz12002.yml"/>
+                    <F N="sch/src/ti/lmz22010.yml"/>
                     <F N="sch/src/ti/op836.yml"/>
                     <F N="sch/src/ti/ref3012.yml"/>
                     <F N="sch/src/ti/sn74lvc125.yml"/>
+                    <F N="sch/src/ti/sn74lvc1g125.yml"/>
                     <F N="sch/src/ti/sn74lvc1t45.yml"/>
                     <F N="sch/src/ti/tpd2s017.yml"/>
+                    <F N="sch/src/ti/tps51200.yml"/>
+                    <F N="sch/src/ti/tps794xx.yml"/>
+                    <F N="sch/src/ti/tps84621.yml"/>
                     <F N="sch/src/ti/ts5a21366.yml"/>
+                    <F N="sch/src/ti/ucd90120a.yml"/>
                 </Folder>
                 <Folder Name="tracopower">
                     <F N="sch/src/tracopower/thd.yml"/>
