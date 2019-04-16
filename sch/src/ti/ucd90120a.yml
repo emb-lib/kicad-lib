@@ -20,18 +20,18 @@ Part1:
         Side: Left
         Sep:  Yes
         Pins:
-            - [15, RESET,       1]
+            - [9,  RESET,       1]
 
     PinGroup2:
         Side: Left
         Sep:  Yes
         Pins:
-            - [8,  TRCK,        1]
-            - [26, TCK/GPIO19,  1]
-            - [43, TDO/GPIO20,  1]
-            - [49, TDI/GPIO21,  1]
-            - [48, TMS/GPIO22,  1]
-            - [64, ~TRST,       1]
+            - [10, TRCK,        1]
+            - [36, TCK/GPIO19,  1]
+            - [37, TDO/GPIO20,  1]
+            - [38, TDI/GPIO21,  1]
+            - [39, TMS/GPIO22,  1]
+            - [40, ~TRST,       1]
 
     PinGroup3:
         Side: Left
