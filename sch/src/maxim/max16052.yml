@@ -20,7 +20,7 @@ Part1:
         Sep:  Yes
         Pins:
             - [3, IN,  1]
-            - [8, EN,  1]
+            - [1, EN,  1]
             - [2, VCC, 1]
             - [5, GND, 3]
 

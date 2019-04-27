@@ -66,7 +66,7 @@ Part1:
             - [49, AVSS1,       1]
             - [48, AVSS2,       1]
             - [64, AVSS3,       1]
-            - [EP, THERM_PAD,   1]
+            - [65, EPAD,        1]
 
     PinGroup6:
         Side: Right

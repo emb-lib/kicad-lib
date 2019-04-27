@@ -30,7 +30,7 @@ Part1:
             - [10, VOUT, 1]
             - [11, VOUT, 1]
             - [7,  FB,   3]
-            - [EP, PGND, 4]
+            - [12, EP,   4]
     
     PinGroup3:
         Side: Left

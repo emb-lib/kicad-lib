@@ -47,4 +47,4 @@ Part1:
         Sep:  No
         Pins:
             - [4,  GND,  1]
-            - [EP, GND,  1]
+            - [8 , EP,   1]
